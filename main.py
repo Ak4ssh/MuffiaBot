@@ -7,7 +7,7 @@ logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 
 if __name__ == '__main__':
-    TELEGRAM_API_TOKEN = os.getenv('TELEGRAM_API_TOKEN')
+    TELEGRAM_API_TOKEN = "6130648711:AAF8kXCVxogaJFMFLfXPKzoaG5tC3_r1CjQ"
     application = ApplicationBuilder().token(TELEGRAM_API_TOKEN).build()
 
     application.add_handler(CommandHandler('help', commands.help))
